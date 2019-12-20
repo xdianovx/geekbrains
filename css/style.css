@@ -185,22 +185,27 @@ body {
 .promo__color {
     color: #f16d7f;   
 }   
-.category {
+.product {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
 }
-.category__item {
-    padding: 10px;
-    width: 50%;
+
+.product__box {
+    column-count: 2;
+    column-gap: 20px;
+
+}
+.product__item {
     position: relative;
+    margin-bottom: 20px;
 }
 
-.category__item:before {
+.product__item:before {
 
 }
 
-.category__item-badge {
+.product__item-badge {
     padding: 20px;
     background-color: #ffffff;
     position: absolute;
@@ -212,25 +217,35 @@ body {
     text-transform: uppercase;
 }
 
-.category__item-badge span {
+.product__item-badge span {
     font-size: 30px;
 }
 .features {
     margin-top: 100px;
 }
-.features__items {
+.feature__items {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .feature__item {
-    width: 25%;
-    margin-bottom: 40px;
+    max-width: 261px;
+    margin-bottom: 39px;
 }
+
 .feature__item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    background-color: #fff;
+    
+}
+
+.feature__item:hover .feature__img {
+    filter: brightness(40%);
+}
+
+.feature__item:hover .feature__add {
+    display: flex;
 }
 .features__title {
     text-align: center;
@@ -249,15 +264,23 @@ body {
     margin-bottom: 63px;
 }
 .feature__img {
-    margin-bottom: 19px;
+    width: 100%;
+}
+
+.feature__content{
+    padding: 20px 15px;
+
+}
+
+.feature__item {
+    position: relative;
+
 }
 .feature__items-title {
     color: #222222;
-    font-family: Lato;
     font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 16px;
-    padding-left: 17px;
 }
 
 .feature__price {
@@ -266,6 +289,30 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 17px;
-    padding-bottom: 21px;
 }
+
+.feature__add {
+    display: block;
+    position: absolute;
+    top: 98px;
+    left: 70px;
+    width: 123px;
+    height: 39px;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.feature__add:hover {
+    box-shadow: 0 0 3px #fff;
+}
+
+.subscribe {
+    height: 438px;
+    background: url(/img/subscribe-bg3.jpg) no-repeat center / cover;
+}
+
