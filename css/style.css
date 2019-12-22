@@ -71,6 +71,10 @@ body {
     border-left: none;
     cursor: pointer;
 }
+
+.header__button:hover {
+    background-color: #e6e6e6;  
+}
 .browse {
     width: 87px;
     height: 38px;
@@ -165,6 +169,12 @@ body {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    opacity: 1;
+}
+
+.menu__link:hover {
+    opacity: 0.7;
+
 }
 
 .promo {
@@ -360,7 +370,7 @@ body {
 
 .feature__btn:after {
     content: '';
-    background: url(/img/arrow-l.png);
+    background: url(../img/arrow-l.png);
     width: 15px;
     height: 7px;
     margin-left: 9px;
@@ -669,18 +679,31 @@ body {
 }
 
 .footer__social {
-    
+    display: flex;
+ 
 }
 
 
-.fa {
-    color: #333;
+.fab {
+    color: #b2b2b2;
     font-size: 16px;
     background-color: #ffffff;
     height: 32px;
     width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    
 }
 
-.fa:hover {
+.fab:hover {
     color: #fff;
+    background-color: #f16d7f;
+}
+
+.fab:active {
+    background-color: #e6e6e6;
+    
+
 }
