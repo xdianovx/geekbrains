@@ -49,13 +49,17 @@ body {
     height: 38px;
     border: 1px solid #e6e6e6;
     border-left: none;
+    padding-left: 15px;
+    color: #a4a4a4;
+    letter-spacing: 0.35px;
+    font-size: 14px;
     
 }
 .header__input::placeholder {
     color: #a4a4a4;
     letter-spacing: 0.35px;
     font-size: 14px;
-    padding-left: 16px;
+   
 }
 
 .header__button {
@@ -126,7 +130,12 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    opacity: 1;
 
+}
+
+.button:hover {
+    opacity: .7;
 }
 .button__details {
     margin-top: 15px;
@@ -340,8 +349,14 @@ body {
     background-color: #f16d7f;
     padding: 18px 43px 19px 24px;
     position: relative;
+    opacity: 1;
     
 }
+
+.feature__btn:hover {
+    opacity: 0.7;
+}
+
 
 .feature__btn:after {
     content: '';
@@ -520,15 +535,16 @@ body {
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
     margin: 0;
-}
-
-.subscribe__input::placeholder {
     opacity: 0.67;
     color: #222224;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
     padding-left: 28px;
+}
+
+.subscribe__input::placeholder {
+    
 }
 .subscribe__email {
 
@@ -543,6 +559,11 @@ body {
     font-weight: 400;
     padding: 14px 18px;
     outline: none;
+    opacity: 1;
+}
+
+.subscribe__email-btn:hover {
+    opacity: 0.7;
 }
 
 .subscribe__line {
@@ -618,6 +639,11 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px
+}
+
+.info__link:hover {
+    color: #f16d7f;
+    font-weight: 400;
 }
 
 .footer {
